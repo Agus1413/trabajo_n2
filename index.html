@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trabajo n2</title>
+</head>
+<body>
+    <script>
+        var autosString = '[{"auto":"toyota-supra","velocidad_maxima":190},{"auto":"Toyota-ae86","velocidad_maxima":220},{"auto":"ford-focus","velocidad_maxima":170},{"auto":"toyota-corolla","velocidad_maxima":200}]'
+        console.log(autosString);
+
+        var acumulador = 0;
+        var max = -1
+        var ToyotaRapido = "Toyota-ae86"
+
+        var autosJSON = JSON.parse(autosString);
+        console.log(autosString);
+
+        for (let index = 0; index < autosJSON.length; index ++) {
+            const auto = autosJSON[index];
+            console.log(auto)
+
+            var marca = autosJSON
+            var modelo = autosJSON
+        }
+        if (marca == "toyota" && elemento.velocidad_maxima > max) {
+            max = elemento.velocidad_maxima; 
+            ToyotaRapido = modelo
+
+        }
+        console.log ("El auto mas rapido es Toyota-ae86", ToyotaRapido)
+        
+    </script>
+</body>
+</html>
